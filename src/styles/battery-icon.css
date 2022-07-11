@@ -1,0 +1,97 @@
+.nav-battery-container {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.nav-battery-container > h4{
+    margin: 0;
+    align-self: center;   
+    padding-left: 15px;
+}
+
+.nav-battery {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+}
+
+.nav-battery-top{
+    align-self: center;
+    width: 3px;
+    height: 20px;
+    background-color: darkgray;
+}
+
+.nav-battery-body {
+    background: url(../content/lightning-charge.svg) no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+    display: inline-block;
+    position: relative;
+    border: solid darkgray 3px;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 59px;
+    text-align: center;
+}
+
+.nav-battery-body div {
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    animation: nav-battery-body 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.nav-battery-body div:nth-child(1) {
+    background: rgb(252, 3, 3);
+    animation-delay: -0.25s;
+    left: 0px;
+}
+
+.nav-battery-body div:nth-child(2) {
+    background: rgb(245, 88, 4);
+    left: 12px;
+    animation-delay: -0.20s;
+}
+
+.nav-battery-body div:nth-child(3) {
+    background: gold;
+    left: 24px;
+    animation-delay: -0.15s;
+}
+
+.nav-battery-body div:nth-child(4) {
+    background: rgb(200, 255, 1);
+    left: 36px;
+    animation-delay: -0.10s;
+}
+
+.nav-battery-body div:nth-child(5) {
+    background: green;
+    left: 48px;
+    animation-delay: 0s;
+}
+
+@keyframes nav-battery-body {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    60% {
+        opacity: 0.4;
+    }
+    80% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0.2;
+        height: 34px;
+        border-radius:5px ;
+    }
+}

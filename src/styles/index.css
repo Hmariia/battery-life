@@ -1,0 +1,11 @@
+/*main page body container*/
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+a, div, h3, h4, h5, h6, p, button{
+  text-decoration: none;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

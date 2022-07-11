@@ -1,0 +1,48 @@
+.nav-container {
+    position: fixed;
+    border-bottom: 1px solid darkgray;
+    background-color: white;
+    position: top;
+    z-index:10;
+    width: 99%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.nav-container > a {
+    text-decoration: none;
+    align-self: center;
+}
+
+.nav-container > a > h1 {
+    margin: 0;
+    padding-right: 20px;
+    color: lightblue;
+    cursor: pointer;
+}
+
+.nav-container > a > h1:hover {
+    color: gray;
+}
+
+/*dropdown sidebar*/
+.nav-dropdown{
+    margin: 20px;
+    align-self: center;
+    height: 55px;
+    width: 55px;
+    border: none;
+    background: url(../content/border-width.svg) no-repeat;
+    background-size: 57px 57px;
+}
+
+.nav-dropdown:hover {
+    height: 65px;
+    width: 65px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+}

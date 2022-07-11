@@ -1,0 +1,30 @@
+.capacityBar-box{
+    border: white solid 2px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.capacityBar {
+    display: flex;
+    position: relative;
+    height: 30px;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+  
+.capacityFill {
+    position: absolute;
+    border-radius: 10px;
+    height: 100%;
+    background-color: white;
+}
+
+.capacityBar-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.capacityBar-label > h5 {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,51 @@
+.filterBar{
+    min-height: 60px;
+    padding: 0 10px;
+    background-color: lightblue;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.filterBar > button, .connection-dropdown > button {
+    height: 40px;
+    margin: 10px 0;
+    min-width: 70px;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.filterBar > button:hover, .connection-dropdown>button:hover, .connection-dropdown-content>button:hover {
+    cursor: pointer;
+    background-color: lightgray;
+    color: white;
+}
+
+/*dropdown*/
+.connection-dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid lightblue;
+    width: 150px;
+    margin-left: 10px;
+}
+  
+.connection-dropdown-content button {
+    width: 100%;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.connection-dropdown:hover .connection-dropdown-content {
+    display: block;
+}
