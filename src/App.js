@@ -15,30 +15,31 @@ function App() {
   const [error, setError] = useState(null)
   const [open, setOpen] = useState(false)
 
-  //data fetching
+   //data fetching
   useEffect (() => {
-    fetch('https://f2byongc84.execute-api.eu-central-1.amazonaws.com/webdev_test_fetch_batteries', {
+    const fetchData = () => {
+      fetch('https://f2byongc84.execute-api.eu-central-1.amazonaws.com/webdev_test_fetch_batteries', {
       method: 'GET',
-    })
-    .then (res => {
-      if (res.ok) {
-        return res.json()
-      }
-      throw res
-    })
-    .then (data => {
-      let copy = [...data]
-      copy.map((item) => item.location === null && (item.location = 'N/A'))
-      copy.map((item) => item.stateOfCharge === null && (item.stateOfCharge = 'N/A'))
-      copy.map((item) => item.stateOfHealth === null && (item.stateOfHealth = 'N/A'))
-      setData(copy)
-      setCopy(data)
-      setLoading(false)
-    })
-    .catch(error => ("Error fetching data: ", error))
-    setError(error)
+      })
+      .then (res => {
+        if (res.ok) {
+          return res.json()
+        }
+        throw res
+      })
+      .then (data => {
+        let copy = [...data]
+        copy.map((item) => item.location === null && (item.location = 'N/A'))
+        copy.map((item) => item.stateOfCharge === null && (item.stateOfCharge = 'N/A'))
+        copy.map((item) => item.stateOfHealth === null && (item.stateOfHealth = 'N/A'))
+        setData(copy)
+        setCopy(data)
+        setLoading(false)
+      })
+      .catch(error => (setError(error)))
+    }
+    fetchData()
   }, [])
-
   if (loading) return <LoadingSpinner />
   if (error) return 'Error!'
   
