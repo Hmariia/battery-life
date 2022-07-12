@@ -27,7 +27,7 @@ const BatteryIcon = ({connectionStatus, stateOfCharge}) => {
         </div>
         <div className='nav-battery-top'></div>
       </div>
-      {stateOfCharge != 'N/A' ? <h4>{stateOfCharge}%</h4> : <h4>N/A</h4>}
+      {stateOfCharge !== 'N/A' ? <h4>{stateOfCharge}%</h4> : <h4>N/A</h4>}
     </div>
   )
 }
