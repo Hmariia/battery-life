@@ -4,7 +4,7 @@ Chart on the home page displays dynamic the state of charge over the time.
 Each card on the home page displays some basic information about batteries. 
 By selecting one displays detailed information of selected battery.
 
-Live preview link: https://guileless-nasturtium-71fffc.netlify.app/
+Live preview link: https://bamomas-batterylife.netlify.app/
 
 ![Mobile Screenshot](https://github.com/Hmariia/battery-life/blob/main/screenshots/mobile-view2.jpg)    ![Mobile Screenshot](https://github.com/Hmariia/battery-life/blob/main/screenshots/mobile-view1.jpg)
 ![Desktop Screenshot](https://github.com/Hmariia/battery-life/blob/main/screenshots/web-view.png)
