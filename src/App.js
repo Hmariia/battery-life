@@ -15,21 +15,6 @@ function App() {
   const [error, setError] = useState('')
   const [open, setOpen] = useState(false)
 
-<<<<<<< HEAD
-   //data fetching
-  useEffect (() => {
-    const fetchData = () => {
-      fetch('https://f2byongc84.execute-api.eu-central-1.amazonaws.com/webdev_test_fetch_batteries', {
-      method: 'GET',
-      })
-      .then (res => {
-        if (res.ok) {
-          return res.json()
-        }
-        throw res
-      })
-      .then (data => {
-=======
   //data fetching
   useEffect(() => {
     const fetchData = () => {
@@ -47,7 +32,6 @@ function App() {
         )
       })
       .then(data => {
->>>>>>> 9539ac5 (update README file and organized folders, wrote few tests and edited styles of sidebar and chart)
         let copy = [...data]
         copy.map((item) => item.location === null && (item.location = 'N/A'))
         copy.map((item) => item.stateOfCharge === null && (item.stateOfCharge = 'N/A'))
@@ -56,7 +40,6 @@ function App() {
         setCopy(data)
         setLoading(false)
       })
-<<<<<<< HEAD
       .catch(error => (setError(error)))
     }
     fetchData()
@@ -64,12 +47,6 @@ function App() {
   if (loading) return <LoadingSpinner />
   if (error) return 'Error!'
   
-=======
-    .catch(error => (setError(error)))
-    }
-    fetchData()
-  }, [])
->>>>>>> 9539ac5 (update README file and organized folders, wrote few tests and edited styles of sidebar and chart)
 
   const onSort = (filter) => {
     setData(sortBatteries(data, filter))
