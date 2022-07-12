@@ -1,5 +1,4 @@
 import ItemList from './ItemList'
-import { useState } from 'react'
 
 const Sidebar = ({ data, onSort, onReset, handleChange, onOpen }) => {
   return (
