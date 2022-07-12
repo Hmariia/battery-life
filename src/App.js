@@ -56,8 +56,6 @@ function App() {
     setData(copy.filter((item) => item.id.includes(e.target.value.toUpperCase())))
   }
 
-  if (loading) return <LoadingSpinner />
-  else if (error) return 'Error!'
   return (
     <div className='body'>
       <Navbar onOpen={() => setOpen(!open)} />
