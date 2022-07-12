@@ -6,13 +6,13 @@ By selecting one displays detailed information of selected battery.
 
 Live preview link: https://bamomas-batterylife.netlify.app/
 
-
+## Mobile Screenshot
 ![Mobile Screenshot](https://github.com/Hmariia/battery-life/blob/main/screenshots/mobile-view2.jpg)    
 
-
+## Mobile Screenshot
 ![Mobile Screenshot](https://github.com/Hmariia/battery-life/blob/main/screenshots/mobile-view1.jpg)
 
-
+## Desktop Screenshot
 ![Desktop Screenshot](https://github.com/Hmariia/battery-life/blob/main/screenshots/web-view.png)
 
 ## Features supported
