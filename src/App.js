@@ -22,7 +22,7 @@ function App() {
       setError(false);
       try {
         const res = await fetch(
-          'https://f2byongc84.execute-api.eu.-central-1.amazonaws.com/webdev_test_fetch_batteries',
+          'https://f2byongc84.execute-api.eu-central-1.amazonaws.com/webdev_test_fetch_batteries',
         );
         const json = await res.json();
         let temp = [...json]
