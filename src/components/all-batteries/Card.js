@@ -1,5 +1,5 @@
-import CapacityBar from './CapacityBar'
-import BatteryIcon from './BatteryIcon'
+import CapacityBar from '../global/CapacityBar'
+import BatteryIcon from '../global/BatteryIcon'
 import { Link } from "react-router-dom"
 
 const Card = ({ item }) => {
@@ -8,7 +8,7 @@ const Card = ({ item }) => {
       <div className='card-top'>
         <BatteryIcon connectionStatus={item.connectionStatusId} stateOfCharge={item.stateOfCharge} />
         <div>
-          <h3>{item.id}</h3>
+          <h3 id='battery-id-title'>{item.id}</h3>
           <h5>{item.location}</h5>
         </div>
       </div>

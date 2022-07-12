@@ -9,6 +9,11 @@
     align-items: center;
 }
 
+.filterBar > h4 {
+    padding: 0 10px;
+    color: white;
+}
+
 .filterBar > button, .connection-dropdown > button {
     height: 40px;
     margin: 10px 0;
@@ -32,8 +37,7 @@
     position: absolute;
     z-index: 1;
     border: 1px solid lightblue;
-    width: 150px;
-    margin-left: 10px;
+    width: 110px;
 }
   
 .connection-dropdown-content button {
@@ -41,7 +45,7 @@
     background-color: white;
     border: none;
     color: black;
-    padding: 12px 16px;
+    padding: 12px 3px;
     text-decoration: none;
     display: block;
 }

@@ -1,3 +1,15 @@
+@import "./battery-details.css";
+@import "./battery-icon.css";
+@import "./capacity-bar.css";
+@import "./card.css";
+@import "./chart.css";
+@import "./circle.css";
+@import "./filter-bar.css";
+@import "./issues-bar.css";
+@import "./loading-spinner.css";
+@import "./navbar.css";
+@import "./sidebar.css";
+
 /*main page body container*/
 .body {
   display: flex;

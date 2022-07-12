@@ -4,8 +4,8 @@ const Navbar = ({ onOpen }) => {
 
   return (
     <nav className="nav-container">
-      <button onClick={() => onOpen() } className="nav-dropdown"></button>
-      <Link to={`/`}><h1>Home</h1></Link>
+      <button id="open-sidebar" onClick={() => onOpen() } className="nav-dropdown"></button>
+      <Link id="home-page" to={`/`}><h1>Home</h1></Link>
     </nav>
   )
 }

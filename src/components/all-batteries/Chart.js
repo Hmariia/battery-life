@@ -46,8 +46,10 @@ const Chart = ({ data }) => {
  
   
   return (
-    <div style={{marginTop:'100px', marginLeft: '13%', textAlign: 'center', width:'70%'}}>
+    <div className='chart-container'>
+      <div className='chart'>
       <Line data={details} options={options} />
+      </div>
     </div>
   )
 }

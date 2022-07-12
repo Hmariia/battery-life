@@ -13,7 +13,7 @@ const HealthIndicator = ({ health }) => {
   return (
     <div className="health-circle-container">
       <div style={styles.healthcircle} className="healthcircle"></div>
-      {health === null ? <h4>N/A</h4> : <h4>{health} %</h4>}
+      {health === 'N/A' ? <h4>N/A</h4> : <h4>{health} %</h4>}
     </div>
   )
 }

@@ -20,55 +20,10 @@
     margin-bottom: 10px;
 }
   
-/*dropdown menu*/
-.dropbtn, .dropdown-content > button{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.dropbtn {
-    border: solid 2px white;
-    width: 100%;
-    height: 50px;
-    cursor: pointer;
-    margin: 5px 0;
-}
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    width: 180px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-  
-.dropdown-content button {
-    width: 100%;
-    background-color: white;
-    border: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-  
-.dropdown-content button:hover {
-    cursor: pointer;
-    background-color: #f1f1f1
-}
-  
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-  
-.dropdown:hover .dropbtn {
-    background-color: lightblue;
-}
-  
 /*List of battery ids*/
 .id-list{
     overflow: auto;
-    height: 411px;
+    height: 470px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -86,6 +41,7 @@
   
 /*SortBox*/
 .sortbox-buttons{
+    border-bottom: solid 1px black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -112,8 +68,4 @@
     font-size: larger;
     background-color: #f1f1f1;
     border: solid 1px black;
-}
-
-/*media mobile size of screen*/
-@media only screen and (max-width: 1000px) {
 }

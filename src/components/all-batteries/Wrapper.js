@@ -1,6 +1,6 @@
 import CardList from "./CardList"
 import Chart from "./Chart"
-import FilterBar from "./FilterBar"
+import FilterBar from '../layout/FilterBar'
 
 const Wrapper = ({ data, onSort, onReset }) => {
   return (
