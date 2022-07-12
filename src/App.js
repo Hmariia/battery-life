@@ -12,41 +12,37 @@ function App() {
   const [data, setData] = useState(null)
   const [copy, setCopy] = useState(null)
   const [loading, setLoading] = useState(true)
-  const [error, setError] = useState('')
+  const [error, setError] = useState()
   const [open, setOpen] = useState(false)
 
   //data fetching
   useEffect(() => {
-    const fetchData = () => {
-      fetch('https://f2byongc84.execute-api.eu-central-1.amazonaws.com/webdev_test_fetch_batteries', {
-        method: 'GET',
-      })
-      .then(res => {
-        if (res.ok) {
-          return res.json()
-        }
-        throw error
-        .then(
-          setError(res.message),
-          setLoading(false)
-        )
-      })
-      .then(data => {
-        let copy = [...data]
-        copy.map((item) => item.location === null && (item.location = 'N/A'))
-        copy.map((item) => item.stateOfCharge === null && (item.stateOfCharge = 'N/A'))
-        copy.map((item) => item.stateOfHealth === null && (item.stateOfHealth = 'N/A'))
-        setData(copy)
-        setCopy(data)
-        setLoading(false)
-      })
-      .catch(error => (setError(error)))
-    }
-    fetchData()
-  }, [])
-  if (loading) return <LoadingSpinner />
-  if (error) return 'Error!'
+    const fetchData = async () => {
+      setLoading(true);
+      setError(false);
+      try {
+        const res = await fetch(
+          'https://f2byongc84.execute-api.eu.-central-1.amazonaws.com/webdev_test_fetch_batteries',
+        );
+        const json = await res.json();
+        let temp = [...json]
+        temp.map((item) => item.location === null && (item.location = 'N/A'))
+        temp.map((item) => item.stateOfCharge === null && (item.stateOfCharge = 'N/A'))
+        temp.map((item) => item.stateOfHealth === null && (item.stateOfHealth = 'N/A'))
+        setData(json);
+        setCopy(json);
+      } catch (error) {
+        setError(true);
+      }
+      setLoading(false);
+    };
+    fetchData();
+  }, [setData]);
+
   
+  if (error) return 'Error!'
+  if (loading) return <LoadingSpinner />
+
 
   const onSort = (filter) => {
     setData(sortBatteries(data, filter))
