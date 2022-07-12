@@ -6,7 +6,7 @@ By selecting one displays detailed information of selected battery.
 
 Live preview link: https://guileless-nasturtium-71fffc.netlify.app/
 
-![Mobile Screenshot](https://raw.githubusercontent.com/Hmariia/battery-life/src/content/mobile-view1.jpg)
+![Mobile Screenshot](https://raw.githubusercontent.com/Hmariia/battery-life/tree/main/screenshotsmobile-view1.jpg)
 ![Desktop Screenshot](add screenshot of desktop version app)
 
 ## Features supported
