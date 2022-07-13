@@ -1,10 +1,12 @@
 
 const LoadingSpinner = () => {
   return (
-    <div className="loading-spinner">
-    <div></div><div></div><div></div><div></div>
-    <div></div><div></div><div></div><div></div>
-    <div></div><div></div><div></div><div></div>
+    <div className="loading-spinner-container">
+      <div className="loading-spinner">
+      <div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div>
+      </div>
     </div>
   )
 }
