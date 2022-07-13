@@ -1,0 +1,43 @@
+.pagination-box {
+    width: 98%;
+    height: 60px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.pagination-box > button {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-color: gray;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination-box > button:hover {
+    background-color: lightblue;
+}
+
+#next {
+    background: url(../content/chevron-double-right.svg);  
+}
+
+#previous {
+    background: url(../content/chevron-double-left.svg);
+}
+
+#next, #previous {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#next:hover, #previous:hover {
+    background-size: 25px 25px;
+}

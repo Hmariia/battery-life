@@ -1,9 +1,9 @@
 import Card from "./Card"
 
-const CardList = ({ data }) => {
+const CardList = ({ data, pages }) => {
   return (
     <div id="card-list" className="card-container">
-        {data.map((item, index) => <Card key={index} item={item}/>)}
+        {data.slice(pages.from, pages.to).map((item, index) => <Card key={index} item={item}/>)}
     </div>
   )
 }

@@ -4,6 +4,7 @@ import Sidebar from './components/layout/Sidebar'
 import Wrapper from './components/all-batteries/Wrapper'
 import { sortBatteries } from './utility/utilities'
 import LoadingSpinner from './components/global/LoadingSpinner'
+import Footer from './components/layout/Footer'
 
 import { useState, useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
@@ -61,6 +62,7 @@ function App() {
         <Route path='/' element={<Wrapper data={data} onSort={onSort} onReset={() => setData(copy)} />} />
         <Route path='/:itemId' element={<BatteryDetails data={data} />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
