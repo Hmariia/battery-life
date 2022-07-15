@@ -1,4 +1,4 @@
-# Bamomas Frontend test assignment
+# React application of battery details
 This app shows list of batteries and detailed information about each of them. The app provides some additional functionality like filtering by battery id, location, capacity, conection status and state of charge. This software is Single Page Application built in React.
 Chart on the home page displays dynamic the state of charge over the time.
 Each card on the home page displays some basic information about batteries. 
